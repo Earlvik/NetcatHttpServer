@@ -1,6 +1,6 @@
 #!/bin/bash
 
-touch fifo
+mkfifo fifo
 while true
 do
 cat fifo | nc -l 1234 |(
